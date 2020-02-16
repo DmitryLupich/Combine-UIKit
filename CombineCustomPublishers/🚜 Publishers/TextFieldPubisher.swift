@@ -18,8 +18,6 @@ extension UITextField {
 
 extension Publishers {
     struct TextFieldPublisher: Publisher {
-        
-        
         typealias Output = String
         typealias Failure = Never
         
@@ -46,7 +44,10 @@ extension Publishers {
         
         func request(_ demand: Subscribers.Demand) { }
         
-        func cancel() { }
+        func cancel() {
+            subscriber = nil
+            textField = nil
+        }
         
         private func subscribe() {
             textField?.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)

@@ -45,7 +45,10 @@ extension Publishers {
         
         func request(_ demand: Subscribers.Demand) { }
         
-        func cancel() { }
+        func cancel() {
+            subscriber = nil
+            segmentedControl = nil
+        }
         
         private func subscribe() {
             segmentedControl?.addTarget(self,

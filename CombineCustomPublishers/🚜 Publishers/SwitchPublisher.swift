@@ -44,7 +44,10 @@ extension Publishers {
         
         func request(_ demand: Subscribers.Demand) { }
         
-        func cancel() { }
+        func cancel() {
+            subscriber = nil
+            switcher = nil
+        }
         
         private func subscribe() {
             switcher?.addTarget(self,

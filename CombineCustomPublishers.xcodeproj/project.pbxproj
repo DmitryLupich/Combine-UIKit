@@ -13,6 +13,13 @@
 		4778593C23F68DCD00870669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4778593A23F68DCD00870669 /* Main.storyboard */; };
 		4778593E23F68DCE00870669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4778593D23F68DCE00870669 /* Assets.xcassets */; };
 		4778594123F68DCE00870669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4778593F23F68DCE00870669 /* LaunchScreen.storyboard */; };
+		4778594923F6923D00870669 /* JustTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778594823F6923D00870669 /* JustTableViewCell.swift */; };
+		4778594C23F6949300870669 /* ButtonPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778594B23F6949300870669 /* ButtonPublisher.swift */; };
+		4778594E23F6983B00870669 /* TextFieldPubisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778594D23F6983B00870669 /* TextFieldPubisher.swift */; };
+		4778595023F69D0000870669 /* SliderPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778594F23F69D0000870669 /* SliderPublisher.swift */; };
+		4778595223F69E3D00870669 /* SegmentControlPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778595123F69E3D00870669 /* SegmentControlPublisher.swift */; };
+		4778595623F6A33A00870669 /* SwitchPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778595523F6A33A00870669 /* SwitchPublisher.swift */; };
+		4778595823F6A4A000870669 /* TableViewPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778595723F6A4A000870669 /* TableViewPublisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4778593D23F68DCE00870669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4778594023F68DCE00870669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4778594223F68DCE00870669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4778594823F6923D00870669 /* JustTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustTableViewCell.swift; sourceTree = "<group>"; };
+		4778594B23F6949300870669 /* ButtonPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPublisher.swift; sourceTree = "<group>"; };
+		4778594D23F6983B00870669 /* TextFieldPubisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPubisher.swift; sourceTree = "<group>"; };
+		4778594F23F69D0000870669 /* SliderPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPublisher.swift; sourceTree = "<group>"; };
+		4778595123F69E3D00870669 /* SegmentControlPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlPublisher.swift; sourceTree = "<group>"; };
+		4778595523F6A33A00870669 /* SwitchPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchPublisher.swift; sourceTree = "<group>"; };
+		4778595723F6A4A000870669 /* TableViewPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPublisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		4778593323F68DCD00870669 /* CombineCustomPublishers */ = {
 			isa = PBXGroup;
 			children = (
-				4778593423F68DCD00870669 /* AppDelegate.swift */,
-				4778593623F68DCD00870669 /* SceneDelegate.swift */,
+				47FFC53F23F6EB87002689A1 /* Supporting Files */,
+				4778594A23F6948000870669 /* 🚜 Publishers */,
 				4778593823F68DCD00870669 /* ViewController.swift */,
-				4778593A23F68DCD00870669 /* Main.storyboard */,
-				4778593D23F68DCE00870669 /* Assets.xcassets */,
-				4778593F23F68DCE00870669 /* LaunchScreen.storyboard */,
 				4778594223F68DCE00870669 /* Info.plist */,
 			);
 			path = CombineCustomPublishers;
+			sourceTree = "<group>";
+		};
+		4778594A23F6948000870669 /* 🚜 Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				4778594B23F6949300870669 /* ButtonPublisher.swift */,
+				4778594D23F6983B00870669 /* TextFieldPubisher.swift */,
+				4778594F23F69D0000870669 /* SliderPublisher.swift */,
+				4778595123F69E3D00870669 /* SegmentControlPublisher.swift */,
+				4778595523F6A33A00870669 /* SwitchPublisher.swift */,
+				4778595723F6A4A000870669 /* TableViewPublisher.swift */,
+			);
+			path = "🚜 Publishers";
+			sourceTree = "<group>";
+		};
+		47FFC53F23F6EB87002689A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4778594823F6923D00870669 /* JustTableViewCell.swift */,
+				4778593D23F68DCE00870669 /* Assets.xcassets */,
+				4778593F23F68DCE00870669 /* LaunchScreen.storyboard */,
+				4778593A23F68DCD00870669 /* Main.storyboard */,
+				4778593423F68DCD00870669 /* AppDelegate.swift */,
+				4778593623F68DCD00870669 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4778595023F69D0000870669 /* SliderPublisher.swift in Sources */,
 				4778593923F68DCD00870669 /* ViewController.swift in Sources */,
+				4778595223F69E3D00870669 /* SegmentControlPublisher.swift in Sources */,
 				4778593523F68DCD00870669 /* AppDelegate.swift in Sources */,
 				4778593723F68DCD00870669 /* SceneDelegate.swift in Sources */,
+				4778594923F6923D00870669 /* JustTableViewCell.swift in Sources */,
+				4778594C23F6949300870669 /* ButtonPublisher.swift in Sources */,
+				4778595623F6A33A00870669 /* SwitchPublisher.swift in Sources */,
+				4778595823F6A4A000870669 /* TableViewPublisher.swift in Sources */,
+				4778594E23F6983B00870669 /* TextFieldPubisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
